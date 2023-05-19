@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fibonacci
+    ports:
+      - 8080:8080
+    restart: unless-stopped
+    command: php -S 0.0.0.0:8080 public/index.php

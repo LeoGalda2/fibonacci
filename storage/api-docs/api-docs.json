@@ -1,0 +1,32 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Fibonacci API",
+        "version": "0.1.0"
+    },
+    "paths": {
+        "/fibonacci/{value}": {
+            "get": {
+                "tags": [
+                    "Fibonacci"
+                ],
+                "operationId": "44b30c3e25fcee7fe95b4e13ff3e7932",
+                "parameters": [
+                    {
+                        "name": "value",
+                        "in": "path",
+                        "description": "desired value to calculate",
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "returns the value of calculating the fibonacci sequence"
+                    }
+                }
+            }
+        }
+    }
+}

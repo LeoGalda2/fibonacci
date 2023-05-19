@@ -1,0 +1,3 @@
+<?php
+
+define('MAX_VALUE_TO_PROCESS_FIBONACCI', 5000);
