@@ -7,7 +7,10 @@ RUN apt-get update && apt-get install -y \
         zlib1g-dev \
         libicu-dev \
         libxml2-dev \
-        libpq-dev
+        libpq-dev \
+        libzip-dev \
+        curl \
+        git
         
 COPY --from=composer /usr/bin/composer /usr/bin/composer        
 
